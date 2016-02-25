@@ -1,0 +1,63 @@
+.navBar {
+  background-color: #444;
+  padding: 10px 15px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+
+#subMenuContainer {
+  background-color: #888;
+  padding: 0px 0px;
+  width: 100%;
+}
+
+#subMenuContainer ul,
+.navBar ul {
+  margin: auto auto;
+  padding: 0px
+}
+
+#subMenuContainer ul {
+  padding: 20px 0px !important;
+  position: relative;
+}
+
+#subMenuContainer ul li,
+.navBar ul li {
+  list-style-type: none;
+  list-style: none;
+  width: 160px;
+  display: inline-block;
+}
+
+#subMenuContainer ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+  padding: 30px 15px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.isSubMenuClosed,
+.isMenuNotVisible {
+  //would be good is if use sass and write some function or mxin
+  //to wrapp the transitions.
+  -webkit-transition: 0.33s ease-out-in;
+  -moz-transition: 0.33s ease-out-in;
+  -o-transition: 0.33s ease-out-in;
+  transition: 0.33s ease-out-in;
+  display: none;
+}
+
+.isSubMenuOpen {
+  -webkit-transition: 0.33s ease-out-in;
+  -moz-transition: 0.33s ease-out-in;
+  -o-transition: 0.33s ease-out-in;
+  transition: 0.33s ease-out-in;
+  display: block;
+}
